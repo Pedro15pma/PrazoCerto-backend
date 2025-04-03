@@ -7,6 +7,9 @@ const pool = new Pool({
   ssl: {
     rejectUnauthorized: false,
   },
+  lookup: (hostname, options, callback) => {
+    return dns.lookup(hostname, { family: 4 }, callback);
+  },
 });
 
 module.exports = pool;
