@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
     const estabelecimentos = await service.listarTodos();
     res.json(estabelecimentos);
   } catch (err) {
-    res.status(500).json({ erro: 'Erro ao listar estabelecimentos' });
+    res.status(500).json({ erro: `Erro ao listar estabelecimentos: ${err}` });
   }
 });
 
