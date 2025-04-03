@@ -1,0 +1,351 @@
+### Listar todos os produtos
+GET http://localhost:3000/carrinhos
+Accept: application/json
+
+###
+
+### Obter produto por ID
+GET http://localhost:3000/produtos/1
+Accept: application/json
+
+###
+
+### Atualizar produto (ID=1)
+PUT http://localhost:3000/produtos/1
+Content-Type: application/json
+
+{
+  "nome": "Produto Atualizado",
+  "descricao": "Descrição atualizada",
+  "preco_original": 19.90,
+  "preco_desconto": 9.90,
+  "validade": "2025-06-01",
+  "id_estabelecimento": 1,
+  "quantidade_estoque": 12
+}
+
+###
+
+### Remover produto (ID=2)
+DELETE http://localhost:3000/produtos/2
+Accept: application/json
+
+###
+
+### Criar produto 1
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Leite Integral 1L",
+  "descricao": "Validade próxima",
+  "preco_original": 5.50,
+  "preco_desconto": 3.50,
+  "validade": "2025-04-10",
+  "quantidade_estoque": 15,
+  "id_estabelecimento": 1
+}
+
+###
+
+### Criar produto 2
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Iogurte Natural",
+  "descricao": "Desconto de 40%",
+  "preco_original": 4.00,
+  "preco_desconto": 2.40,
+  "validade": "2025-04-08",
+  "quantidade_estoque": 11,
+  "id_estabelecimento": 1
+}
+
+###
+
+### Criar produto 3
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Queijo Minas",
+  "descricao": "Promoção até o vencimento",
+  "preco_original": 20.00,
+  "preco_desconto": 12.00,
+  "validade": "2025-04-12",
+  "quantidade_estoque": 17,
+  "id_estabelecimento": 1
+}
+
+###
+
+### Criar produto 4
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Presunto Fatiado",
+  "descricao": "Bom para consumo imediato",
+  "preco_original": 10.00,
+  "preco_desconto": 5.00,
+  "validade": "2025-04-07",
+  "quantidade_estoque": 22,
+  "id_estabelecimento": 1
+}
+
+###
+
+### Criar produto 5
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Pão de Forma Integral",
+  "descricao": "Pacote com validade de 3 dias",
+  "preco_original": 7.50,
+  "preco_desconto": 3.75,
+  "validade": "2025-04-09",
+  "quantidade_estoque": 13,
+  "id_estabelecimento": 1
+}
+
+###
+
+### Criar produto 6
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Refrigerante Cola 2L",
+  "descricao": "Desconto por vencimento próximo",
+  "preco_original": 8.00,
+  "preco_desconto": 4.00,
+  "quantidade_estoque": 77,
+  "validade": "2025-04-15",
+  "id_estabelecimento": 2
+}
+
+###
+
+### Criar produto 7
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Água Mineral com Gás",
+  "descricao": "Estoque em liquidação",
+  "preco_original": 2.00,
+  "preco_desconto": 1.00,
+  "validade": "2025-04-20",
+  "quantidade_estoque": 99,
+  "id_estabelecimento": 2
+}
+
+###
+
+### Criar produto 8
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Maionese 250g",
+  "descricao": "Últimos dias de validade",
+  "preco_original": 6.50,
+  "preco_desconto": 3.25,
+  "validade": "2025-04-06",
+  "quantidade_estoque": 55,
+  "id_estabelecimento": 2
+}
+
+###
+
+### Criar produto 9
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Biscoito Recheado",
+  "descricao": "Validade de 5 dias",
+  "preco_original": 3.50,
+  "preco_desconto": 1.75,
+  "quantidade_estoque": 66,
+  "validade": "2025-04-11",
+  "id_estabelecimento": 2
+}
+
+###
+
+### Criar produto 10
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Molho de Tomate 340g",
+  "descricao": "Estoque final",
+  "preco_original": 4.20,
+  "preco_desconto": 2.00,
+  "quantidade_estoque": 99,
+  "validade": "2025-04-13",
+  "id_estabelecimento": 2
+}
+
+###
+
+### Criar produto 11
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Arroz Branco 1kg",
+  "descricao": "Últimos pacotes",
+  "preco_original": 6.00,
+  "preco_desconto": 3.00,
+  "quantidade_estoque": 77,
+  "validade": "2025-05-01",
+  "id_estabelecimento": 3
+}
+
+###
+
+### Criar produto 12
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Feijão Carioca 1kg",
+  "descricao": "Oferta por tempo limitado",
+  "preco_original": 7.00,
+  "preco_desconto": 3.50,
+  "quantidade_estoque": 12,
+  "validade": "2025-05-03",
+  "id_estabelecimento": 3
+}
+
+###
+
+### Criar produto 13
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Café Torrado 500g",
+  "descricao": "Oferta do mês",
+  "preco_original": 10.00,
+  "preco_desconto": 6.00,
+  "quantidade_estoque": 55,
+  "validade": "2025-05-08",
+  "id_estabelecimento": 3
+}
+
+###
+
+### Criar produto 14
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Leite Condensado",
+  "descricao": "Super desconto",
+  "preco_original": 6.20,
+  "preco_desconto": 3.10,
+  "quantidade_estoque": 88,
+  "validade": "2025-05-02",
+  "id_estabelecimento": 3
+}
+
+###
+
+### Criar produto 15
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Azeite de Oliva 500ml",
+  "descricao": "Produto próximo ao vencimento",
+  "preco_original": 25.00,
+  "preco_desconto": 12.50,
+  "quantidade_estoque": 111,
+  "validade": "2025-05-10",
+  "id_estabelecimento": 3
+}
+
+###
+
+### Criar produto 16
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Farinha de Trigo 1kg",
+  "descricao": "Promoção especial",
+  "preco_original": 4.00,
+  "preco_desconto": 2.00,
+  "quantidade_estoque": 215,
+  "validade": "2025-04-25",
+  "id_estabelecimento": 4
+}
+
+###
+
+### Criar produto 17
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Fermento Biológico",
+  "descricao": "Validade curta",
+  "preco_original": 3.00,
+  "preco_desconto": 1.50,
+  "quantidade_estoque": 2315,
+  "validade": "2025-04-18",
+  "id_estabelecimento": 4
+}
+
+###
+
+### Criar produto 18
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Suco de Laranja 1L",
+  "descricao": "Líquido em promoção",
+  "preco_original": 7.00,
+  "preco_desconto": 3.50,
+  "quantidade_estoque": 115,
+  "validade": "2025-04-16",
+  "id_estabelecimento": 4
+}
+
+###
+
+### Criar produto 19
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Margarina 500g",
+  "descricao": "Oferta de geladeira",
+  "preco_original": 5.50,
+  "quantidade_estoque": 165,
+  "preco_desconto": 2.75,
+  "validade": "2025-04-14",
+  "id_estabelecimento": 4
+}
+
+###
+
+### Criar produto 20
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Chocolate ao Leite 90g",
+  "descricao": "Desconto final",
+  "preco_original": 8.00,
+  "quantidade_estoque": 195,
+  "preco_desconto": 4.00,
+  "validade": "2025-04-22",
+  "id_estabelecimento": 4
+}

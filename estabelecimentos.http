@@ -1,0 +1,190 @@
+### Listar todos os estabelecimentos
+GET http://localhost:3000/estabelecimentos
+Accept: application/json
+
+###
+
+### Obter estabelecimento por ID
+GET http://localhost:3000/estabelecimentos/1
+Accept: application/json
+
+###
+
+### Criar novo estabelecimento
+POST http://localhost:3000/estabelecimentos
+Content-Type: application/json
+
+{
+  "nome": "Padaria Central",
+  "descricao": "Padaria com pães artesanais",
+  "endereco": "Rua das Flores, 123",
+  "telefone": "(11) 99999-8888"
+}
+
+###
+
+### Atualizar estabelecimento existente (ID=1)
+PUT http://localhost:3000/estabelecimentos/1
+Content-Type: application/json
+
+{
+  "nome": "Padaria Central Atualizada",
+  "descricao": "Padaria com novos produtos",
+  "endereco": "Rua das Flores, 456",
+  "telefone": "(11) 98888-7777"
+}
+
+###
+
+### Excluir estabelecimento por ID
+DELETE http://localhost:3000/estabelecimentos/2
+Accept: application/json
+
+
+
+### Listar todos os estabelecimentos
+GET http://localhost:3000/estabelecimentos
+Accept: application/json
+
+###
+
+### Criar estabelecimento - Padaria Central
+POST http://localhost:3000/estabelecimentos
+Content-Type: application/json
+
+{
+  "nome": "Padaria Central",
+  "descricao": "Padaria com pães artesanais",
+  "endereco": "Rua das Flores, 123",
+  "telefone": "(11) 99999-8888"
+}
+
+###
+
+### Criar estabelecimento - Supermercado Econômico
+POST http://localhost:3000/estabelecimentos
+Content-Type: application/json
+
+{
+  "nome": "Supermercado Econômico",
+  "descricao": "Mercado popular com preços baixos",
+  "endereco": "Av. Brasil, 2000",
+  "telefone": "(21) 97777-3333"
+}
+
+###
+
+### Criar estabelecimento - Empório Natural
+POST http://localhost:3000/estabelecimentos
+Content-Type: application/json
+
+{
+  "nome": "Empório Natural",
+  "descricao": "Produtos naturais e orgânicos",
+  "endereco": "Alameda Verde, 50",
+  "telefone": "(41) 98888-1111"
+}
+
+###
+
+### Criar estabelecimento - Açougue Bom Corte
+POST http://localhost:3000/estabelecimentos
+Content-Type: application/json
+
+{
+  "nome": "Açougue Bom Corte",
+  "descricao": "Carnes frescas e selecionadas",
+  "endereco": "Rua dos Açores, 78",
+  "telefone": "(31) 95555-4444"
+}
+
+###
+
+### Criar estabelecimento - Hortifruti da Vila
+POST http://localhost:3000/estabelecimentos
+Content-Type: application/json
+
+{
+  "nome": "Hortifruti da Vila",
+  "descricao": "Frutas e verduras sempre frescas",
+  "endereco": "Rua do Pomar, 12",
+  "telefone": "(51) 96666-2222"
+}
+
+###
+
+### Criar estabelecimento - Mercearia União
+POST http://localhost:3000/estabelecimentos
+Content-Type: application/json
+
+{
+  "nome": "Mercearia União",
+  "descricao": "Mercearia tradicional com amplo estoque",
+  "endereco": "Travessa das Nações, 400",
+  "telefone": "(71) 98888-5555"
+}
+
+###
+
+### Criar estabelecimento - Padaria Sonho Bom
+POST http://localhost:3000/estabelecimentos
+Content-Type: application/json
+
+{
+  "nome": "Padaria Sonho Bom",
+  "descricao": "Doces, salgados e confeitaria",
+  "endereco": "Rua da Confeitaria, 250",
+  "telefone": "(85) 97777-1212"
+}
+
+###
+
+### Criar estabelecimento - Mercado São José
+POST http://localhost:3000/estabelecimentos
+Content-Type: application/json
+
+{
+  "nome": "Mercado São José",
+  "descricao": "Mercado tradicional do bairro",
+  "endereco": "Rua São José, 987",
+  "telefone": "(81) 96666-8787"
+}
+
+###
+
+### Criar estabelecimento - Minimercado Express
+POST http://localhost:3000/estabelecimentos
+Content-Type: application/json
+
+{
+  "nome": "Minimercado Express",
+  "descricao": "Produtos essenciais e conveniência",
+  "endereco": "Rua da Rapidez, 22",
+  "telefone": "(48) 95555-2323"
+}
+
+###
+
+### Criar estabelecimento - Conveniência 24h
+POST http://localhost:3000/estabelecimentos
+Content-Type: application/json
+
+{
+  "nome": "Conveniência 24h",
+  "descricao": "Aberto dia e noite para emergências",
+  "endereco": "Av. Central, 100",
+  "telefone": "(61) 94444-0000"
+}
+
+###
+
+### Criar estabelecimento - Quitanda Frescor
+POST http://localhost:3000/estabelecimentos
+Content-Type: application/json
+
+{
+  "nome": "Quitanda Frescor",
+  "descricao": "Frutas frescas e atendimento familiar",
+  "endereco": "Rua da Quitanda, 77",
+  "telefone": "(19) 98888-6767"
+}
