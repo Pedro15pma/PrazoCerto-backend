@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const estabelecimentos = require('./src/routes/estabelecimentos');
 const produtos = require('./src/routes/produtos');
 const carrinhos = require('./src/routes/carrinhos');
