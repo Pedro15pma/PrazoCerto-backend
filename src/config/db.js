@@ -1,9 +1,11 @@
 const { Pool } = require('pg');
-const senhaCodificada = encodeURIComponent('U-abjbNXGrPT7?v');
-const DATABASE_URL = `postgresql://postgres.pszuaetwtgxturpykkwo:${senhaCodificada}@aws-0-sa-east-1.pooler.supabase.com:5432/postgres`;
+
+require('dotenv').config();
+
+const DATABASE = encodeURIComponent(process.env.DATABASE)
 
 const pool = new Pool({
-  connectionString: DATABASE_URL,
+  connectionString: `postgresql://postgres.pszuaetwtgxturpykkwo:${DATABASE}@aws-0-sa-east-1.pooler.supabase.com:5432/postgres`,
   ssl: { rejectUnauthorized: false },
 });
 
