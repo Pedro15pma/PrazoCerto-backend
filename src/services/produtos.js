@@ -3,13 +3,15 @@ const pool = require('../config/db');
 
 const produtoService = {
   async listarTodos() {
-    const query = sql.select().from('produtos').orderBy('id_produto DESC');
-    const { rows } = await pool.query(query.toParams());
+    //const query = sql.select().from('produtos').orderBy('id_produto DESC');
+    const query = "select * from produtos p";
+  
+    const { rows } = await pool.query(query);
     return rows;
   },
 
   async obterPorId(id) {
-    const query = sql.select().from('produtos').where({ id_produto: id });
+    const query = sql.select().from('produtos').where({ id: id });
     const { rows } = await pool.query(query.toParams());
     return rows[0] || null;
   },
@@ -27,7 +29,7 @@ const produtoService = {
   },
 
   async deletar(id) {
-    const query = sql.delete().from('produtos').where({ id_produto: id }).returning('*');
+    const query = sql.delete().from('produtos').where({ id: id }).returning('*');
     const { rows } = await pool.query(query.toParams());
     return rows[0] || null;
   },

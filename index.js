@@ -25,6 +25,6 @@ app.use('/compras', compras);
 app.use('/reservas', reservas);
 app.use('/usuarios', usuarios);
 
-app.listen(3000, () => {
-  console.log('Servidor rodando na porta 3000');
+app.listen(4000, () => {
+  console.log('Servidor rodando na porta 4000');
 });

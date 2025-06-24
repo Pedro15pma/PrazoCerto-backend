@@ -1,0 +1,7 @@
+
+DELETE  http://localhost:4000/produtos/cadeira
+
+
+
+
+DELETE http://localhost:4000/produtos/cadeira

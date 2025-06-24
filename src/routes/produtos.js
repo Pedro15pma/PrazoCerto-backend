@@ -9,6 +9,7 @@ router.get('/', async (req, res) => {
     const produtos = await service.listarTodos();
     res.json(produtos);
   } catch (err) {
+    console.dir(err,{depth: null})
     res.status(500).json({ erro: 'Erro ao listar produtos' });
   }
 });
